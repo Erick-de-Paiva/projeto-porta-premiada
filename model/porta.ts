@@ -32,7 +32,7 @@ export default class PortaModel {
         return new PortaModel(this.numero, this.temPresente, selecionada, this.aberta)
     }
 
-    alterarSelecao() {
+    alternarSelecao() {
         const selecionada = !this.selecionada
         return new PortaModel(this.numero, this.temPresente, selecionada, this.aberta)
     }
