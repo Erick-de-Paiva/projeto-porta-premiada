@@ -7,11 +7,11 @@ interface EntradaNumericaProps {
 }
 
 export default function EntradaNumerica(props: EntradaNumericaProps) {
-const dec = () => props.onChange(props.value -1)
-const inc = () => props.onChange(props.value +1)
+    const dec = () => props.onChange(props.value - 1)
+    const inc = () => props.onChange(props.value + 1)
 
     return (
-        <div className="styles.entradaNumerica">
+        <div className={styles.entradaNumerica}>
             <span className={styles.text}>{props.text}</span>
             <span className={styles.value}>{props.value}</span>
             <div className={styles.botoes}>
