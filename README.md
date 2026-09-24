@@ -1,40 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Porta Premiada (Jogo do Monty Hall)
 
-## Getting Started
+Projeto desenvolvido com Next.js e React, aplicando conceitos modernos de desenvolvimento web, componentização, tipagem estática com TypeScript e estilização com CSS Modules. 
 
-First, run the development server:
+O objetivo do projeto é a implementação interativa do famoso problema de probabilidade e lógica conhecido como Paradoxo de Monty Hall, onde o usuário configura o cenário de portas e testa suas escolhas em busca do prêmio.
 
-```bash
+---
+
+## Tecnologias Utilizadas
+
+Este projeto foi construído utilizando as seguintes tecnologias e ferramentas:
+
+* React
+* Next.js
+* TypeScript
+* CSS Modules (para estilização escopada por componente)
+
+---
+
+## Funcionalidades
+
+* ⚙️ **Configuração Dinâmica:** Tela inicial interativa que permite personalizar em tempo real a quantidade total de portas e definir qual delas esconde o prêmio.
+* 🛡️ **Validação de Parâmetros:** Sistema de segurança na primeira página que valida as entradas do usuário, garantindo que a porta com o presente nunca seja superior ao número total de portas configuradas.
+* 🚪 **Lógica Interativa de Seleção:** Sistema completo de abertura de portas, gerenciamento de estados e controle de fluxo do jogo.
+* 🎨 **Estilização Modular:** Interface estilizada utilizando CSS Modules para garantir organização limpa e escopo isolado por componente.
+* ✅ **Tipagem Estrita e Build Validado:** Código robusto e tipado com TypeScript, assegurando segurança de tipos e build de produção livre de erros.
+
+---
+
+## Pré-visualização do Projeto
+
+### Tela de Início
+![Tela Inicial](./public/imagens/tela-inicio.png)
+
+### Tela do Jogo
+![Tela do Jogo](./public/imagens/tela-jogo.png)
+
+---
+
+## Como Executar o Projeto
+
+Certifique-se de ter o Node.js instalado na sua máquina.
+
+1. Clone este repositório:
+git clone https://github.com/Erick-de-Paiva/projeto-porta-premiada.git
+
+2. Entre na pasta do projeto:
+cd projeto-porta-premiada
+
+3. Instale as dependências:
+npm install
+
+4. Execute o servidor de desenvolvimento:
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. Abra o navegador em http://localhost:3000 para ver o projeto rodando!
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+---
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Como Gerar o Build de Produção
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+Se desejar testar a versão otimizada para produção:
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+npm run build
+npm run start
